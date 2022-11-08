@@ -1,0 +1,30 @@
+﻿
+@model TypesViewModel
+
+
+<h1 class="d-flex justify-content-center m-4"> Types Of Flowers </h1>
+
+<div class="row bg-secondary">
+    <form class="bg-muted" asp-controller="TypeOfFlowers" asp-action="RegisterType" method="post">
+        <div class="mb-8 text-white ">
+            <label class="form-label"> First Name </label>
+            <input asp-for=Name type="text" class="form-control" />
+
+        </div>
+
+         <div class="mb-3 text-white">
+            <label class="form-label"> Last Name </label>
+            <input asp-for=Surname type="text" class="form-control"/>
+
+        </div>
+
+    
+
+        <div class="mb-3">
+            <button class="btn btn-primary" > Save </button>
+        </div>
+    </form>
+
+
+
+</div>

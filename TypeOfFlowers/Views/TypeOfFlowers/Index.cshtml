@@ -1,0 +1,32 @@
+﻿     @model List<TypeOfFlowers.Models.TypesViewModel>
+
+<div class="d-flex justify-content-center text-Black mb-4" >
+    <h1> Types Of Flowers </h1>
+
+</div>
+
+<span> Some type of flowers are : 
+    <ul>
+        <li> Alstroemeria    </li>
+        <li> Calla Lily</li>
+        <li> Gardenia</li>
+        <li> Daisy</li>
+        <li> Gerbera Daisy</li>
+        <li> Orchid</li>
+        <li> Tulip</li>
+
+    </ul>
+</span>
+
+
+<p> If you know some others types of flowers please write  <a href="https://localhost:7295/TypeOfFlowers/Type"> here</a> </p>
+
+
+
+<ul class="text-muted h5 mb-3">
+    @foreach(var type in Model){
+    
+        <li>  @type.Name @type.Surname  </li> 
+    }
+
+</ul>
